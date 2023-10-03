@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html> <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<link rel="stylesheet" href="ESTILO/style.css" type="text/css" /> 
+<title>MENU PRINCIPAL DE LA TIENDA</title>
+<script>
+function salir()
+{
+//esta es la funcion en javascript para salir
+var resp = confirm("¿Esta seguro de salir?"); if(resp == true) {
+document.location.href="http://localhost/";
+}
+}
+</script>
+
+</head>
+<body>
+<body bgcolor="33ff99">
+<font size="6" COLOR = "#FF0000">
+<marquee DIRECTION="LEFT" BGCOLOR="#00ff00" width= 100% HEIGHT="40">ALFA S.A.C.CONTROL DE VENTAS</marquee></font>
+
+<BR> <CENTER>
+<div>
+<iframe width="100%" height="75" src="reloj3.htm" scrolling="no" frameborder="no" ></iframe> </div>
+</CENTER>
+<table align="center" border="5" width="100%" height="50">
+<br>
+<tr> <b> <font color="#008080" face="bimini"> <td width="26%" align="center" height="50" bgcolor="#FFFF00">
+<img border="0" src="images\arbol1.gif" width="126" height="80">
+<b> <font color="#000080" face="Bimini"><i>ALFA S.A.C.</b></td> </font></b>
+<font size="10" COLOR="#FF0000"> </font>
+
+
+
+<td width="74%" height="50" bgcolor="#CCFFFF"><center><b><font size ="6" color="#000080" face="Bimini"><i>INVERSIONES ALFA S.A.C.&nbsp;</i></font></center> </b></center>
+    <p><b><i><center><font color="#000080" face="Bimini" size = "6"><em>CONTROL DE VENTAS</EM> </font></i></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </tr> </table>
+    <center><b> <font color="#000080" face="Bimini"><i>PANEL DE ADMINISTRACION </i> </font></b> </center>
+    <div id="contenido">
+    <div class="menu">
+    <div id="menu_i"></div>
+    <ul>
+    <div id="menu_d"></div>
+    <li><a href="#">MANTENIMIENTOS</a>
+        <ul><span></span>
+            <li><a href="CLIENTES.PHP">Clientes</a></li> 
+            <li><a href="categorias.php">Catergorias</a></li>
+            <li><a href="ARTICULOS.PHP">Articulos</a></li>
+        </ul> 
+    </li>
+    <ul><span></span>
+    <li><a href="clientes.php">Clientes</a></li> <li><a href="categorias.php">Categorias</a></li> <li><a href="articulos.php">Articulos</a></li> </ul>
+    <li><a href="#">PROCESOS</a>
+    <ul><span></span>
+    <li><a href="pedidos1.php">Pedidos</a></li> </ul>
+    </li>
+    <li><a href="#">LISTADOS</a>
+    <ul><span></span> <!-- <span> indica las columnas donde se aplica -->
+    <li><a href="listar.php">Listar usuarios</a></li> 
+    <li><a href="listarcli.php">Listar clientes</a></li>
+    <li><a href="listarcateg.php">Listar categorias</a></li> 
+    <li><a href="listararti.php">Listar articulos</a></li>
+    <li><a href="listarpedidos.php">Listar pedidos</a></li>
+</ul>
+ </li>
+<li><a href="#">REPORTES</a>
+<ul><span></span>
+<li><a href="REPORTE1.PHP">Clientes</a></li> 
+<li><a href="REPORTE2.PHP">Articulos</a></li>
+<li><a href="REPORTE3.PHP">Pedidos</a></li>
+</ul> </li>
+
+<li><a href="#">MULTIMEDIA</a>
+<ul><span></span>
+<li><a href="multiaudio1.html">Mis audios 1</a></li> 
+<li><a href="multiaudio2.html">Mis audios 2</a></li>
+<li><a href="multivideox.html">Mis videos</a></li>
+<li><a href="fotos.htm">Fotos</a></li>
+</ul>
+</li>
+<li><a href="#">SALIR</a>
+<ul><span></span>
+<li><a href="javascript:window.close()" onclick='return salir()'>Salir</a></li> 
+<li><a href="index.php">Volver</a></li>
+</ul>
+</li>
+</ul>
+</div> <!-- fin Menu -->
+</div> <!-- fin Contenido -->
+</body>
+</html>

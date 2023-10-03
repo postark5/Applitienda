@@ -1,0 +1,65 @@
+<html>
+   <head>
+<style type="text/css">
+
+.TextoFondo {
+   background-color: #CCFFFF;  
+
+}
+
+</style>
+
+   <script language="javascript">
+   var intval=""
+
+           if(intval=="")
+           {
+                   intval=window.setInterval("start_clock()",1000);
+           }
+    
+   function start_clock()
+   {
+           var d=new Date();
+           var sw="am";
+           var h=d.getHours();
+           var m=d.getMinutes() + "";
+           var s=d.getSeconds() + "";
+           if(h>12)
+           {
+                   h-=12;
+                   sw="pm";
+           }
+           if(m.length==1)
+           {
+                   m="0" + m;
+           }
+           if(s.length==1)
+           {
+                   s="0" + s;
+           }
+
+/* Coemienza eñ Script de la Fecha */
+ 
+var Dia = new Array("DOMINGO", "LUNES", "MARTES", "MIERCOLES", "JUEVES", "VIERNES", "SABADO");
+var Mes = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+var Hoy = new Date();
+var Anio = Hoy.getFullYear();
+var Fecha = "Hoy es " + Dia[Hoy.getDay()] + ", " + Hoy.getDate() + " de " + Mes[Hoy.getMonth()] + " de " + Anio + ", a las ";
+ 
+/* Termina el script de la Fecha */
+ 
+ 
+           document.formu.tiempo.value= Fecha +h + ":" + m + ":" + s + " " + sw + " LIMA-PERU";
+   }
+
+   </script>
+
+<body bgcolor = "#00FF00">
+
+   <form id="formu" name="formu">
+ <center>   <input type="text" name="tiempo" value="" size ="70%" class="TextoFondo" style="font-size:18pt; text-align:center; color: #FF0000" > </center>
+
+    </form>
+ 
+   </body>
+   </html>

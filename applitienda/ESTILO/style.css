@@ -1,0 +1,107 @@
+html, body {
+font-family: Arial;
+margin: 0;
+padding: 0;
+background: #fff; /* color blanco de fondo de la página */
+height: 100%;     /* alto de la página  */
+}
+
+#contenido {
+width: 1000px; /* ancho del contenido del menu */
+margin: 0 auto;
+background: #e6e5ba;  /* color de fondo del contenido del menu #e6e5ba */
+border: 1px solid #d1d0ad;
+padding: 10px 0;     /* Espacio de alto del menu */
+min-height: 100%;
+height: auto !important;
+}
+
+.menu li {
+list-style-type: none;
+float: left;
+text-transform: uppercase;  /* mostrar en mayuscula los titulos del menu principal */
+font-size: 17px;
+font-weight: bold;
+line-height: 80px;
+padding-right: 50px;
+}
+
+.menu {
+width: 100%; /* ancho del menú */
+height: 70px;   /* alto del menú */
+background: transparent url('../img/bgmenu.png') repeat-x;  /* imagen de fondo del menú  */
+}
+
+.menu li a {
+text-decoration: none;
+color: #222;    /* color de texto del menu principal */
+display: block  !importnat;
+position: relative;
+width: 140px !importnat; /* ancho de opciones del menú principal y amplitud del cuadro del menú desplegable */
+}
+
+
+
+.menu ul li ul span {
+background: url('../img/flecha.png'); /* imagen de enlace del menu principal con el menu desplegable */
+margin: -20px 50px;
+width: 20px;
+height: 10px;
+position: absolute;
+}
+
+.menu ul li ul {
+display: none; 
+background: #FFFF00 ; /* color de fondo del cuadro del menú desplegable */
+padding: 10px 0;
+position: absolute;
+margin: -12px -20px;
+.margin: 69px -170px;
+_margin: 69px -170px;
+}
+
+.menu ul li:hover ul {
+display: block;          /* mostrar el menu desplegable */
+}
+
+
+.menu ul li ul li {
+display: block;   /* muestra el menu deplegable con las opciones en vertical */
+float: none;
+position: relative;
+color: #cc33ff;
+padding: 0 20px;
+line-height: 30px;
+}
+
+.menu ul li ul li a{
+color: #ff0000;    /* color de texto del menu desplegable */
+}
+
+
+
+#menu_i {
+float: left;
+width: 54px;
+height: 100px;
+background: transparent url('../img/bgmenu_i.png') no-repeat; /* imagen por izquierda del menu */
+margin-left: -16px;
+}
+
+
+#menu_d{
+float: right;
+width: 54px;
+height: 100px;
+background: transparent url('../img/bgmenu_d.png') no-repeat;   /* imagen por derecha del menu */
+margin-right: -16px;
+}
+
+.menu li a:hover {
+color: #000;           /* color negro de opcion del menu a seleccionar */
+}li a:hover {
+color: #000;
+} {
+color: #000;
+}lor: #000;
+}
